@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Sayfa içeriği İngilizce olduğu için 'en' kalabilir -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Resume</h1>
+    </header>
+
+    <main>
+        <section id="intro"> <!-- Giriş için ayrı bir bölüm -->
+            <h2>Welcome</h2> <!-- Giriş için bir başlık ekleyebiliriz -->
+            <p>Welcome to my resume page! Here you can find information about my skills,
+                experience, and projects.</p>
+            <p>The projects featured in this section are tangible examples of my progress
+                 on my JavaScript learning journey and my problem-solving skills.
+                 Each one is a piece carefully selected from my personal 'treasure chest',
+                 showcasing technical development and containing valuable learnings.</p>
+        </section>
+        <hr>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <!-- Inline stil ve geçersiz attribute kaldırıldı, class eklendi -->
+            <img src="./Profil Photo.png" alt="Fatih Arslan Profile Photo" class="profile-photo">
+            <p>My name is Fatih Arslan, and I am a web developer with a passion for creating interactive and user-friendly websites.</p>
+            <p>I have experience in HTML, CSS, JavaScript, and Python.</p>
+        </section>
+        <hr>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <!-- İleride daha fazla yetenek ekleyebilirsin -->
+            </ul>
+        </section>
+        <hr>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://ffatiharslan1.github.io/Port-Noluyo-Noluyo/" target="_blank">First Step Projects: (My learning process projects)</a></li>
+                <!-- İleride daha fazla proje ekleyebilirsin -->
+            </ul>
+        </section>
+        <!-- İletişim veya Deneyim gibi başka bölümler de eklenebilir -->
+        <!-- <hr> -->
+        <!-- <section id="experience"> -->
+        <!--    <h2>Experience</h2> -->
+        <!--    <ul> -->
+        <!--        <li>Job Title at Company (Year - Year)</li> -->
+        <!--    </ul> -->
+        <!-- </section> -->
+    </main>
+
+    <footer>
+        <!-- Copyright sembolü düzeltildi -->
+        <p>&copy; 2025 Fatih Arslan. All Rights Reserved.</p>
+    </footer>
+
+    <!-- <style> bloğu buradan tamamen kaldırıldı -->
+    <style> 
+        /* Genel Sayfa Stilleri */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #003c02;
+    color: #ffffff;
+}
+
+/* Üst Bilgi (Header) Stilleri */
+header {
+    background: #cf7704;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #a05c03;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Ana İçerik Alanı */
+main {
+    padding: 30px 20px;
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 30px; /* Bölümler arası boşluğu biraz azalttık */
+}
+
+/* Paragraf Boşlukları */
+p {
+    margin-top: 0;
+    margin-bottom: 1em; /* Paragraflar arası standart boşluk */
+}
+
+/* Başlık Stilleri */
+h2 {
+    font-family: "Courier New", Courier, monospace;
+    color: #ffc107;
+    border-bottom: 1px solid #ffc107;
+    padding-bottom: 8px; /* Alt çizgi ile metin arasını biraz açtık */
+    margin-top: 0; /* Section zaten boşluk veriyor */
+    margin-bottom: 25px; /* Başlık ile altındaki içerik arası boşluk */
+}
+
+/* Link Stilleri */
+a {
+    color: #ff9100;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+/* Profil Fotoğrafı Stili */
+.profile-photo {
+    display: block; /* Ortalama için block element yapalım */
+    max-width: 200px; /* Maksimum genişlik */
+    height: auto; /* Oranı koru */
+    margin: 20px auto 25px auto; /* Üst, sağ/sol otomatik (ortalama), alt boşluk */
+    border-radius: 50%; /* Yuvarlak fotoğraf */
+    border: 3px solid #ffc107; /* Fotoğraf etrafına çerçeve */
+}
+
+/* Yetenekler Listesi Stili */
+#skills ul {
+    list-style: none; /* Madde işaretlerini kaldır */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Yetenekleri yan yana dizmek için */
+    flex-wrap: wrap; /* Sığmazsa alt satıra geçsin */
+    gap: 10px; /* Yetenek etiketleri arası boşluk */
+}
+
+#skills li {
+    background-color: rgba(255, 255, 255, 0.1); /* Hafif arka plan */
+    padding: 5px 12px; /* İç boşluk */
+    border-radius: 15px; /* Hap şeklinde görünüm için */
+    font-size: 0.9em;
+}
+
+/* Projeler Listesi Stili */
+#projects ul {
+    list-style: none; /* Madde işaretlerini kaldır */
+    padding: 0;
+    margin: 0;
+}
+
+#projects li {
+    margin-bottom: 10px; /* Liste elemanları arası boşluk */
+}
+
+#projects li a {
+    /* Proje linklerine özel stil gerekirse buraya eklenebilir */
+    /* Örneğin: */
+    /* display: block; */
+    /* padding: 5px 0; */
+}
+
+
+/* Yatay Çizgi (HR) Stili */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 145, 0, 0), rgba(255, 145, 0, 0.75), rgba(255, 145, 0, 0));
+    margin: 40px 0;
+}
+
+/* Alt Bilgi (Footer) Stilleri */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    background: #cf7704;
+    color: #ffffff;
+    border-top: 3px solid #a05c03;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Portfolyodan kalan ve burada kullanılmayan stiller kaldırıldı */
+/* .project-list, .project-list li, .project-list a, .project-thumbnail, .project-list span stilleri silindi */
+
+
+    </style>
+</body>
+</html>
